@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Список ссылок</title>
+</head>
+
+<body>
+    <section class="row mt-3 p-3 border border-1 rounded bg-light">
+        <p>
+        <h4>Задание 1</h4><br>
+        Создать html-страницу для ввода имени пользователя.
+        Необходимо проверять каждый символ, который вводит пользователь. Если он ввел цифру, то не отображать ее в
+        input.
+        </p>
+        <div class="frame">
+            <div class="window">
+                <h5>Введите ваше имя :</h5>
+                <input type="text" id="username" placeholder="Введите имя">
+            </div>
+        </div>
+    </section>
+
+    <section class="row mt-3 p-3 border border-1 rounded bg-light">
+        <p>
+        <h4>Задание 2</h4><br>
+        Создать html-страницу с кнопкой Открыть и модальным
+        окном. На модальном окне должен быть текст и кнопка Закрыть.
+        Изначально модальное окно не отображается. При клике на
+        кнопку Открыть появляется модальное окно, на кнопку Закрыть –
+        исчезает.
+        </p>
+        <div class="btnGreen">
+            <button class="open" id="openModalBtn">Открыть</button>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>Это текст модального окна.</p>
+                <button class="close" id="closeModalBtn">Закрыть</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="row mt-3 p-3 border border-1 rounded bg-light">
+        <p>
+        <h4>Задание 3</h4><br>
+        Создать html-страницу с футбольным полем, которое занимает всю ширину и высоту экрана, и мячом размером 100 на
+        100 пикселей. Сделать так, чтобы при клике мышкой по полю, мяч плавно
+        перемещался на место клика. Учтите: необходимо, чтобы центр
+        мяча останавливался именно там, где был совершен клик мышкой.
+        Также предусмотрите, чтобы мяч не выходил за границы поля.
+        </p>
+        <div class="pole" id="field">
+            <div class="ball" id="ball"></div>
+        </div>
+    </section>
+
+    <section class="row mt-3 p-3 border border-1 rounded bg-light">
+        <p>
+        <h4>Задание 4</h4><br>
+        Создать html-страницу со светофором и кнопкой, которая
+        переключает светофор на следующий цвет.
+        </p>
+        <div class="frame4">
+            <div class="trafficlLight">
+                <div id="light" class="light"></div>
+                <div id="light" class="light"></div>
+                <div id="light" class="light"></div>
+            </div>
+            <div>
+                <button id="btn">NEXT</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="row mt-3 p-3 border border-1 rounded bg-light">
+        <p>
+        <h4>Задание 5</h4><br>
+        Создать html-страницу со списком книг.
+        При щелчке на книгу, цвет фона должен меняться на оранжевый.
+        Учтите, что при повторном щелчке на другую книгу, предыдущей –
+        необходимо возвращать прежний цвет.
+        </p>
+        <h4>Список книг</h4>
+        <ol id="book-list">
+            <li class="book">"JavaScript for Kids: A Playful Introduction to Programming" by Nick Morgan</li>
+            <li class="book">"Eloquent JavaScript: A Modern Introduction to Programming" by Marign Haverbeke</li>
+            <li class="book">"JavaScript: The Good Parts" by Douglas Crockford</li>
+            <li class="book">"Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns
+                JS Libraries" by Eric Elliot</li>
+            <li class="book">"Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript" by David Herman
+            </li>
+            <li class="book">"JavaScript: The Definitive Guide" by David Flanagan</li>
+            <li class="book">"You Don't Know JS" by Kyle Simpson</li>
+        </ol>
+    </section>
+
+    <section class="row mt-3 p-3 border border-1 rounded bg-light">
+        <p>
+        <h4>Задание 6</h4><br>
+        Создать html-страницу с несколькими кнопками.
+        При наведении на кнопку, должна появляться подсказка с текстом. По умолчанию – подсказка появляется сверху от
+        кнопки. Но если она не помещается сверху от кнопки, тогда отображается снизу.
+        </p>
+        <div class="frame6">
+            <div>
+              <button data-tooltip="Tool tip 1">BUTTON 1</button>
+              <button data-tooltip="Tool tip 2">BUTTON 2</button>
+            </div>      
+          </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
